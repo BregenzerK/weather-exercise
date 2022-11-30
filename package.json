@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/bregenzerk.stencil-lb3phn7n",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve s9ttOnxjV7Mx65nHF8NT --open"
+  }
+}
