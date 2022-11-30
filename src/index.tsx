@@ -2,11 +2,11 @@
 import { h, Component, State, Host } from "@stencil/core";
 
 @Component({
-  tag: "my-counter",
+  tag: "my-weather",
   styleUrl: "index.css",
   shadow: true,
 })
-export class MyCounter {
+export class MyWeather {
   @State() count: number = 0;
 
   inc() {
@@ -18,12 +18,15 @@ export class MyCounter {
   }
 
   render() {
-    return (
-      <Host>
-        <button onClick={this.dec.bind(this)}>-</button>
-        <span>{this.count}</span>
-        <button onClick={this.inc.bind(this)}>+</button>
-      </Host>
-    );
+    return [
+      <span>{this.count}</span>,
+
+        <limel-icon-button
+                icon="snowflake"
+                disabled={false}
+                onClick={this.inc.bind(this)}
+            />
+
+    ];
   }
 }
