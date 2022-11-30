@@ -22,7 +22,7 @@ export class MyWeather {
       <span>{this.count}</span>,
 
         <limel-icon-button
-                icon="snowflake"
+                icon="bell"
                 disabled={false}
                 onClick={this.inc.bind(this)}
             />
